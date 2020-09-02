@@ -1,5 +1,5 @@
 # Текст задачи
-from math import pi, pow
+from math import pi, pow  
 a = pi  
 print(a)  
 

@@ -14,15 +14,6 @@ class Record:
     def __lt__(self, other):
         return self.rate < other.rate
 
-    def get_skill(self):
-        return self.skill
-
-    def get_phone(self):
-        return self.phone
-
-    def get_city(self):
-        return self.city
-
 b = Record()
 c = Record()
 c.name = "Igor"
@@ -31,5 +22,3 @@ c.rate = 3000
 if c>b:
     print (f"{c.name} зарабатывает больше чем {b.name}")
 
-
-print(b.get_city())
