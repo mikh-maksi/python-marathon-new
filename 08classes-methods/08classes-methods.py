@@ -1,10 +1,16 @@
-class ThreeAdder:
-    name = "" #name = "Mikhail"
-    age = 23
-    rate = 1234
-    def setRate (self,rate):
-        self.rate = rate
+class Record:
+    name = "Mikhail"
+    phone = "+380631234567"
+    rate = "2500"
 
-a = ThreeAdder()
-a.setRate(1000)
-print(a.rate)
+    def get_name(self):
+        return self.phone
+
+    def get_phone(self):
+        return self.phone
+
+    def get_rate(self):
+        return **self.rate**
+
+b =Record()
+print(b.get_rate())

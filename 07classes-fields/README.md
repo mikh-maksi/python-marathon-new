@@ -1,9 +1,17 @@
 # Текст задачи
-class ThreeAdder:
-    name = "**Mikhail**" *Пусть участник пишет своё имя, т.е. там должна быть любая строка*
-    age = 23
-    rate = 1234
+class Record:
+    phone = "+380631234567"
+    skill = "Python"
+    city = "**Kyiv**"
+   
+    def get_phone(self):
+        return self.phone
 
-a = ThreeAdder()
+    def get_skill(self):
+        return self.skill
 
-print(a.name)
+    def get_city(self):
+        return self.city
+
+b =Record()
+print(b.get_city())
