@@ -1,7 +1,7 @@
 class Record:  
-    def __init__(self):  
+    def \__init_\_(self):  
         self.fields = []  
-    def __len__(self):  
+    def \__len_\_(self):  
         return len(self.fields)  
     def add(self, field_item):  
         self.fields.append(**field_item**)  
