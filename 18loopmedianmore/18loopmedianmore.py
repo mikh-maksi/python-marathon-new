@@ -2,15 +2,15 @@ def sum(iterable):
     sum = 0
     for val in iterable:  
         sum += val  
-    return sum
+    return sum  
 
-def avg(iterable):
-    sum = 0
-    n = 0
+def avg(iterable):  
+    sum = 0  
+    n = 0  
     for val in iterable:  
-        sum += val
-        n += 1
-    return sum / n
+        sum += val  
+        n += 1  
+    return sum / n  
 
 def steps(val, step):
     result = []
