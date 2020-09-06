@@ -5,17 +5,17 @@ import re
 class DataField:  
 &nbsp;&nbsp;&nbsp;&nbsp;field_description = "General data"  
 
-&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, value):  
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_init\_\_(self, value):  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value = None  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.validate(value)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;def validate(self, value):  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value = value  
 
-&nbsp;&nbsp;&nbsp;&nbsp;def __contains__(self, item):  
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_contains\_\_(self, item):  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return item in self.value  
 
-&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):  
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_str\_\_(self):  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return f"{self.field_description}: {self.value}"  
 
 
