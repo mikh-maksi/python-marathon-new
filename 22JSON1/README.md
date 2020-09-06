@@ -6,6 +6,6 @@ print(c['City'])
 record = {}  
 record['Name'] = "Serhii"  
 record['City'] = "Kyiv"  
-record['Skill'] = "**Python**"
-d = json.dumps(record)
+record['Skill'] = "**Python**"  
+d = json.dumps(record)  
 print(d)
