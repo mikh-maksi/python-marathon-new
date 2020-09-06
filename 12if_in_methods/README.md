@@ -1,34 +1,34 @@
 # Оператор выбора
 ## Код задачи
 
-import re
-class DataField:
-    field_description = "General data"
+import re  
+class DataField:  
+&nbsp;&nbsp;&nbsp;&nbsp;field_description = "General data"  
 
-    def __init__(self, value):
-        self.value = None
-        self.validate(value)
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, value):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value = None  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.validate(value)  
 
-    def validate(self, value):
-        self.value = value
+&nbsp;&nbsp;&nbsp;&nbsp;def validate(self, value):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value = value  
 
-    def __contains__(self, item):
-        return item in self.value
+&nbsp;&nbsp;&nbsp;&nbsp;def __contains__(self, item):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return item in self.value  
 
-    def __str__(self):
-        return f"{self.field_description}: {self.value}"
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return f"{self.field_description}: {self.value}"  
 
 
-class EmailField(DataField):
-    field_description = "Email"
-    EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
+class EmailField(DataField):  
+&nbsp;&nbsp;&nbsp;&nbsp;field_description = "Email"  
+&nbsp;&nbsp;&nbsp;&nbsp;EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")  
 
-    def validate(self, value):
-        if **self.EMAIL_REGEX.match(value)**:
-            self.value = value
-            print (f"email changed to {value}.")
-        else: 
-            print (f"{value} is not an email.")
+&nbsp;&nbsp;&nbsp;&nbsp;def validate(self, value):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if **self.EMAIL_REGEX.match(value)**:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value = value  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (f"email changed to {value}.")  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (f"{value} is not an email.")  
 
 
 a = EmailField("")
