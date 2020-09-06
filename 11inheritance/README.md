@@ -1,20 +1,20 @@
-class DataField:
-    field_description = "General"
+class DataField:  
+&nbsp;&nbsp;&nbsp;&nbsp;field_description = "General"  
 
-    def __init__(self, value):
-        self.value = None
-        self.validate(value)
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, value):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value = None  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.validate(value)  
 
-    def validate(self, value):
-        self.value = value
+&nbsp;&nbsp;&nbsp;&nbsp;def validate(self, value):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.value = value  
 
-    def __contains__(self, item):
-        return item in self.value
-
-
-class FirstNameField(DataField):
-    field_description = "**Name**"
+&nbsp;&nbsp;&nbsp;&nbsp;def __contains__(self, item):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return item in self.value  
 
 
-class CityField(DataField):
-    field_description = "City"
+class FirstNameField(DataField):  
+&nbsp;&nbsp;&nbsp;&nbsp;field_description = "**Name**"  
+
+
+class CityField(DataField):  
+&nbsp;&nbsp;&nbsp;&nbsp;field_description = "City"  
