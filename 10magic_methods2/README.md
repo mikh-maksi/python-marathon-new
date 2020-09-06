@@ -19,20 +19,20 @@ if a>0:
 
 ## Текст задачи
 class Record:  
-    def __init__(self):  
-        self.fields = []  
-        self.name = "Oleg"  
-        self.phone = "+380631234567"  
-        self.skill = "Python"  
-        self.city = "Kyiv"  
-        self.rate = 2000  
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_init\_\_(self):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.fields = []  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = "Oleg"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.phone = "+380631234567"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.skill = "Python"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.city = "Kyiv"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.rate = 2000  
 
-    def __eq__(self, other):  
-        return self.rate == other.rate    
-    def __gt__(self, other):  
-        return self.rate **>** other.rate  
-    def __lt__(self, other):  
-        return self.rate < other.rate  
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_eq\_\_(self, other):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.rate == other.rate    
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_gt\_\_(self, other):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.rate **>** other.rate  
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_lt\_\_(self, other):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.rate < other.rate  
 
 b = Record()  
 c = Record()  
