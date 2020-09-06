@@ -37,20 +37,20 @@ https://habr.com/ru/post/186608/
 
 ## Текст задачи
 class Record:  
-    def __init__(self):  
-        self.fields = []  
-        self.phone = "+380631234567"  
-        self.skill = "**Python**"  
-        self.city = "Kyiv"  
+&nbsp;&nbsp;&nbsp;&nbsp;def \_\_init\_\_(self):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.fields = []  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.phone = "+380631234567"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.skill = "**Python**"  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.city = "Kyiv"  
  
-    def get_skill(self):  
-        return self.skill  
+&nbsp;&nbsp;&nbsp;&nbsp;def get_skill(self):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.skill  
 
-    def get_phone(self):  
-        return self.phone  
+&nbsp;&nbsp;&nbsp;&nbsp;def get_phone(self):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.phone  
 
-    def get_city(self):  
-        return self.city  
+&nbsp;&nbsp;&nbsp;&nbsp;def get_city(self):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.city  
 
 b =Record()  
 print(b.get_city())  
