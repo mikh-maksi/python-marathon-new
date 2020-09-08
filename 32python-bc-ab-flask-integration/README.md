@@ -44,7 +44,7 @@ def search():
 &nbsp;&nbsp;&nbsp;&nbsp;else:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# PUT YOUR CODE HERE  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_result = AB.multiple_search**(\*\*search_query)**          
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_result = AB.multiple_search **(\*\*search_query)**          
 &nbsp;&nbsp;&nbsp;&nbsp;search_result_dict = {}  
 &nbsp;&nbsp;&nbsp;&nbsp;for key, rec in search_result.items():  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_result_dict[str(key)] = rec.to_dict()  
