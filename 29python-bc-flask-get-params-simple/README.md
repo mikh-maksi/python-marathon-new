@@ -6,5 +6,5 @@ app = Flask("answer")
 def get_id():  
 &nbsp;&nbsp;&nbsp;&nbsp;response = **request.args["id"]**  
 &nbsp;&nbsp;&nbsp;&nbsp;return response  
-
+  
 ## Уточнить сам код 
