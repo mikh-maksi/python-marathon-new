@@ -1,8 +1,7 @@
-class Record:  
-&nbsp;&nbsp;&nbsp;&nbsp;def \_\_init\_\_(self):  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.fields = []  
-
-&nbsp;&nbsp;&nbsp;&nbsp;def get_rate(self):  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for field in self.fields:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if field.  field_description == "**Rate**":  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return field.value  
+import statistics  
+rates = [1500,3200,1700,2600,2000,3000,4200]  
+  
+mean = statistics.mean(rates)  
+rates_min = min(rates)  
+rates_max = max(rates)  
+item_number = len(rates)  
